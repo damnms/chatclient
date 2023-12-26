@@ -1,0 +1,37 @@
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+.shared_windows_runners:
+  tags:
+    #    - shared-windows
+    - windows
+#    - windows-1809
+
+stages:
+  - build
+
+build_windows:
+  stage: build
+  extends:
+    - .shared_windows_runners
+  script:
+    - ./gradlew.bat shadowJar -Pplatform=win
+  artifacts:
+    paths:
+      - build/libs/chatclient-all.jar
+  only:
+    - master
+
+build_linux:
+  stage: build
+  image: openjdk:21-bullseye
+  #  image: amazoncorretto:21-alpine3.18-jdk
+  script: ./gradlew test shadowJar -Pplatform=linux && mkdir chatclient && mv build/libs/chatclient-all.jar chatclient
+  artifacts:
+    paths:
+      - chatclient
+  only:
+    - master
+

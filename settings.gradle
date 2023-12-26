@@ -1,0 +1,1 @@
+System.setProperty("JAVAFX_PLATFORM", "windows")

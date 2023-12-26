@@ -1,0 +1,109 @@
+read: <!DOCTYPE HTML PUBLIC "-//W3C//D
+read: TD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" type="text/css" href="/synapse/style_stream.css?1596109213">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script language="JavaScript">
+	doscroll = true;
+	parent.forces = false;
+	function Scroller() {
+	 if (parent.force) { doscroll = true }
+	  if (doscroll != false) {
+	    window.scrollBy(0,50);
+	  }
+	  window.setTimeout("Scroller()", 50);
+	}
+	Scroller();
+	parent.atok = 'UuXaM';
+	function atok(p1) {
+	  parent.atok = p1;
+	}
+
+	window.status="powered by www.webkicks.de";
+
+	window.onmouseover=function(e){doscroll=false;};
+	window.onmouseout=function(e){doscroll=true;}
+
+	function wopen(link,wi,he) {
+	      wincom = window.open(link ,"fenster","toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,width="+wi+",height="+he);
+	      wincom.focus() ;
+	}
+
+	function repClick(rep) {
+	  parent.info.document.eingabe.message.value+=':' + rep;
+	  parent.info.document.eingabe.message.focus();
+	  return false;
+	}
+
+	function CallPrem() {
+	  window.open("/synapse/premium/slackito/","Prem","scrollbars=no,width=205,height=260,resizable=no,toolbar=no,status=no,directories=no,menubar=no,location=no");
+	}
+
+	function fluester(fchatter) {
+	      parent.info.document.eingabe.message.value="/f "+fchatter+" ";
+	      parent.info.document.eingabe.message.focus();
+	      var pos = parent.info.document.eingabe.message.createTextRange();
+	      pos.collapse(false);
+	      pos.select();
+	      return false;
+	}
+
+	function team() {
+	      parent.info.document.eingabe.message.value="/team ";
+	      parent.info.document.eingabe.message.focus();
+	      var pos = parent.info.document.eingabe.message.createTextRange();
+	      pos.collapse(false);
+	      pos.select();
+	      return false;
+	}
+
+	parent.clearTimeout(parent.cdProbmodus);
+	parent.clearTimeout(parent.cdProbmodusRC);
+
+	function LoginSound() {
+		if (parent.forces) {
+
+read: 		 ausgabe = '<audio autopla
+read: y="autoplay"><source src="/8.wav" type="audio/wav"/></audio>';
+
+read:             document.getElem
+read: entById('soundcontainer').innerHTML=ausgabe;
+	    }
+	}
+
+  setTimeout('parent.info.sende();', 1000);
+  setTimeout('parent.info.sendes();', 1000);
+
+</script>
+
+read: </head>
+
+read: <body onFocus="doscroll=fals
+read: e" onMouseOver="doscroll=false">
+
+read: powered by <a href="https://
+read: www.webkicks.de" target="_blank">https://www.webkicks.de</a>
+
+read: <hr>
+
+read: <script language="JavaScript
+read: ">parent.rightFrame.document.location="/cgi-bin/ol.cgi?cid=synapse&raum=main";</script>
+
+read: <script type="text/javascri
+read: pt" src="/grundscripts.js"></script><script language="javascript">linkCnt=0; tds=document.getElementsByTagName("td"); function autoLink(){for(;linkCnt<tds.length;linkCnt++){ if(tds[linkCnt].innerHTML.match(/([^"'=]+(?:http|ftp|https):\/\/[^<>\s']+)/i)){tds[linkCnt].innerHTML=tds[linkCnt].innerHTML.replace(/([^"'=]+)((?:http|ftp|https):\/\/[^<>\s']+)/i, "$1<a href='$2' target='_blank'>$2</a>");}else{ tds[linkCnt].innerHTML=tds[linkCnt].innerHTML.replace(/([^"'=\/\w\.]+)(\w+\.[a-zA-Z0-9_-]+\.\w\w+[^<>\s']*)/i, "$1<a href='http:\/\/$2' target='_blank'>$2</a>");}}}window.setInterval("autoLink()", 500)</script><br><style type=text/css>font[color=red]{color:#ae0aa8}</style><br><br>Willkommen <b><FONT COLOR="#000000">s</FONT><FONT COLOR="#000000">l</FONT><FONT COLOR="#000000">a</FONT><FONT COLOR="#000000">c</FONT><FONT COLOR="#000000">k</FONT><FONT COLOR="#000000">i</FONT><FONT COLOR="#000000">t</FONT><FONT COLOR="#000000">o</FONT></b>. <span onclick="javascript: repClick('blop')" style="cursor: pointer;"><img src="/synapse/replacer/blop.gif" alt="&#58;blop"></span> Viel Freude beim chatten. <br><ul><li>Bei Problemen im Chat bitte wenden an: kalia (vorher schiza) <span onclick="javascript: repClick('kalia')" style="cursor: pointer;"><img src="/synapse/replacer/kalia.gif" alt="&#58;kalia"></span> schizalein@web.de,<br> oder an ProfHase <span onclick="javascript: repClick('hase')" style="cursor: pointer;"><img src="/synapse/replacer/hase.gif" alt="&#58;hase"></span> haseprof@gmail.com.<br>Bitte die Mail-Adressen für eventuelle Notfälle <u>speichern</u> (z.B. Ausfall der Chatsoftware).</li><br><li>Wenn irgendetwas im Chat dauerhaft stört, bitte ich euch, konstruktive Kritik nicht zurückzuhalten, damit nach Lösungen gesucht werden kann.</li><br></ul>
+
+read: <!-- update!! //-->
+
+read: <div id="soundcontainer"></d
+read: iv>
+
+read: <table border=0><tr><td val
+read: ign=bottom><font size=-2>(13:40)</font> <font title="xxx"><img src="/gruen.gif"><login xxx /><B><i><span onclick="fluester('xxx')"><b><FONT COLOR="#000000">s</FONT><FONT COLOR="#000000">l</FONT><FONT COLOR="#000000">a</FONT><FONT COLOR="#000000">c</FONT><FONT COLOR="#000000">k</FONT><FONT COLOR="#000000">i</FONT><FONT COLOR="#000000">t</FONT><FONT COLOR="#000000">o</FONT></b></span><span class="commandcolor"> betritt den Chat</b></span></i></td></tr></table>
+
+
+read: <table border=0><tr><td val
+read: ign=bottom><FONT SIZE=-2>(13:40)</FONT> <font title="xxx"><img src="/rot.gif"><B><i><b><FONT COLOR="#000000">x</FONT><FONT COLOR="#000000">x</FONT><FONT COLOR="#000000">x</FONT><FONT COLOR="#000000">x</FONT><FONT COLOR="#000000">k</FONT><FONT COLOR="#000000">x</FONT><FONT COLOR="#000000">x</FONT><FONT COLOR="#000000">o</FONT></b><span class="commandcolor"> verlässt den Chat</b></span></i><small> (Browser geschlossen)</small><script language="JavaScript">parent.rightFrame.del("xxx");</script></td></tr></table>

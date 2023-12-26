@@ -1,0 +1,225 @@
+{
+  "resources": {
+    "includes": [
+      {
+        "pattern": "\\QMETA-INF/log4j-provider.properties\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/java.lang.System$LoggerFinder\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/java.net.spi.InetAddressResolverProvider\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/java.net.spi.URLStreamHandlerProvider\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/java.nio.channels.spi.SelectorProvider\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/java.time.zone.ZoneRulesProvider\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/java.util.spi.ResourceBundleControlProvider\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/org.apache.commons.logging.LogFactory\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/org.apache.logging.log4j.core.util.ContextDataProvider\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/org.apache.logging.log4j.core.util.WatchEventService\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/org.apache.logging.log4j.spi.Provider\\E"
+      },
+      {
+        "pattern": "\\QMETA-INF/services/org.apache.logging.log4j.util.PropertySource\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/glass/utils/NativeLibLoader.class\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/javafx/scene/control/skin/modena/modena.bss\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/DrawCircle_Color.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/FillCircle_Color.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/FillPgram_Color.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/FillPgram_LinearGradient_PAD.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/Solid_TextureFirstPassLCD.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/Solid_TextureRGB.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/Solid_TextureSecondPassLCD.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/Texture_Color.frag\\E"
+      },
+      {
+        "pattern": "\\Qcom/sun/prism/es2/glsl/Texture_LinearGradient_PAD.frag\\E"
+      },
+      {
+        "pattern": "\\Qcommons-logging.properties\\E"
+      },
+      {
+        "pattern": "\\Qlibglass.so\\E"
+      },
+      {
+        "pattern": "\\Qlibglassgtk3.so\\E"
+      },
+      {
+        "pattern": "\\Qlibjavafx_font.so\\E"
+      },
+      {
+        "pattern": "\\Qlibjavafx_font_freetype.so\\E"
+      },
+      {
+        "pattern": "\\Qlibjavafx_font_pango.so\\E"
+      },
+      {
+        "pattern": "\\Qlibjfxwebkit.so\\E"
+      },
+      {
+        "pattern": "\\Qlibprism_es2.so\\E"
+      },
+      {
+        "pattern": "\\Qlibprism_sw.so\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test.jsn\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test.json\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test.properties\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test.xml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test.yaml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test.yml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test18b4aac2.jsn\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test18b4aac2.json\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test18b4aac2.properties\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test18b4aac2.xml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test18b4aac2.yaml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2-test18b4aac2.yml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.StatusLogger.properties\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.component.properties\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.jsn\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.json\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.properties\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.system.properties\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.xml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.yaml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j2.yml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j218b4aac2.jsn\\E"
+      },
+      {
+        "pattern": "\\Qlog4j218b4aac2.json\\E"
+      },
+      {
+        "pattern": "\\Qlog4j218b4aac2.properties\\E"
+      },
+      {
+        "pattern": "\\Qlog4j218b4aac2.xml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j218b4aac2.yaml\\E"
+      },
+      {
+        "pattern": "\\Qlog4j218b4aac2.yml\\E"
+      },
+      {
+        "pattern": "\\Qmozilla/public-suffix-list.txt\\E"
+      },
+      {
+        "pattern": "\\Qorg/htmlunit/cyberneko/html_entities.properties\\E"
+      },
+      {
+        "pattern": "java.base:\\Qjdk/internal/icu/impl/data/icudt72b/nfkc.nrm\\E"
+      },
+      {
+        "pattern": "java.base:\\Qjdk/internal/icu/impl/data/icudt72b/ubidi.icu\\E"
+      },
+      {
+        "pattern": "java.base:\\Qjdk/internal/icu/impl/data/icudt72b/uprops.icu\\E"
+      },
+      {
+        "pattern": "java.base:\\Qsun/net/idn/uidna.spp\\E"
+      },
+      {
+        "pattern": "jdk.jfr:\\Qjdk/jfr/internal/query/view.ini\\E"
+      }
+    ]
+  },
+  "bundles": [
+    {
+      "name": "com.sun.javafx.tk.quantum.QuantumMessagesBundle",
+      "locales": [
+        "",
+        "de",
+        "und"
+      ]
+    },
+    {
+      "name": "com/sun/javafx/scene/control/skin/resources/controls",
+      "locales": [
+        "",
+        "de",
+        "und"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'org.graalvm.buildtools.native' version '0.9.27'
+    id 'org.beryx.runtime' version '1.13.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-web', version: '2.22.0'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.22.0'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.22.0'
+
+    implementation group: 'org.htmlunit', name: 'htmlunit', version: '3.9.0'
+
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.8.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '7.15.0'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.10.1')
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.10.1')
+    testImplementation "org.testfx:testfx-core:4.0.17"
+    testImplementation "org.testfx:testfx-junit5:4.0.17"
+
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.register('cucumber') {
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'chatclient', 'src/test/resources']
+        }
+    }
+}
+
+def os = findProperty("platform") != null ? getProperty("platform") : "linux"
+
+javafx {
+    version = "21"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.web']
+    platform = os
+}
+
+mainClassName = 'chatclient.Application'
+
+shadowJar {
+    manifest {
+        attributes 'Main-Class': 'chatclient.Application'
+    }
+}
+
+runtime {
+    targetPlatform("win") {
+        jdkHome = jdkDownload("https://corretto.aws/downloads/latest/amazon-corretto-21-x64-windows-jdk.zip")
+    }
+    targetPlatform("linux") {
+        jdkHome = jdkDownload("https://corretto.aws/downloads/latest/amazon-corretto-21-x64-linux-jdk.tar.gz")
+    }
+}
