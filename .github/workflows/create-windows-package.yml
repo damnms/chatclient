@@ -13,3 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - run: ./gradlew shadowJar -Pplatform=windows
+      - name: Archive package
+        uses: actions/upload-artifact@v3
+        with:
+          name: chatclient
+          path: build/libs/chatclient-all.jar
