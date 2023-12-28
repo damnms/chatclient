@@ -1,8 +1,8 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: create-packages
+run-name: creating windows and macos packages
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  create-windows-package:
     runs-on: windows-latest
     steps:
       - name: ☕ Set up Java
@@ -13,6 +13,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - run: ./gradlew shadowJar -Pplatform=windows
+      - name: Archive package
+        uses: actions/upload-artifact@v3
+        with:
+          name: chatclient
+          path: build/libs/chatclient-all.jar
+  create-macos-package:
+    runs-on: macos-latest
+    steps:
+      - name: ☕ Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Checkout
+        uses: actions/checkout@v4
+      - run: ./gradlew shadowJar -Pplatform=mac
       - name: Archive package
         uses: actions/upload-artifact@v3
         with:
