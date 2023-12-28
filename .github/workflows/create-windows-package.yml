@@ -16,7 +16,7 @@ jobs:
       - name: Archive package
         uses: actions/upload-artifact@v3
         with:
-          name: chatclient
+          name: chatclient-win
           path: build/libs/chatclient-all.jar
   create-macos-package:
     runs-on: macos-latest
@@ -32,5 +32,5 @@ jobs:
       - name: Archive package
         uses: actions/upload-artifact@v3
         with:
-          name: chatclient
+          name: chatclient-mac
           path: build/libs/chatclient-all.jar
